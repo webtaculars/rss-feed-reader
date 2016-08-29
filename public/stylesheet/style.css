@@ -1,0 +1,170 @@
+* {
+  font-family: 'Helvetica';
+}
+
+a {
+  text-decoration: none;
+  color: #4298a7;
+}
+
+body {
+  margin: 0;
+  overflow: auto;
+  font-size: 16px;
+}
+
+button {
+  outline: none;
+}
+
+/* HEADING */
+header {
+  width: 55%;
+  margin: 0 2% .3em 8%;
+  float: left;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+.get-feed input {
+  width: 15em;
+  padding: 5px 6px 4px 6px;
+}
+
+.get-feed input,
+.get-feed button {
+  font-size: 1em;
+}
+
+.get-feed button {
+  padding: 7px 10px 6px 10px;
+  background-color: #4BA7B8;
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  border-radius: 3px;
+}
+
+.fetch:hover {
+  cursor: pointer;
+  background-color: #D6521E;
+}
+
+
+ /* FEED INFO */
+.feed-info {
+  margin: 2em 0 0 0;
+}
+
+.feed-info .title {
+  margin: 0;
+  font-size: 1.8em;
+  color: #555;
+}
+
+/* FEED CONTENT */
+section.content {
+  width: 55%;
+  margin: 1em 2% 2em 8%;
+  float: left;
+}
+
+.feed-info a {
+  color: #555;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.save-feed { /* bookmark button */
+  border: 0;
+  padding: 0;
+  margin: 0 0.7em;
+  color: #D6521E;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: transparent;
+}
+
+.save-feed:hover {
+  cursor: pointer;
+  color: #e28561;
+}
+.hide-feed { 
+  border: 0;
+  padding: 0;
+  margin: 0 0.7em;
+  color: #D6521E;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: transparent;
+}
+
+.hide-feed:hover {
+  cursor: pointer;
+  color: #e28561;
+}
+
+/* Articles */
+article {
+  margin-top: .5em;
+  margin-bottom: 1em;
+  border-bottom: 1px dashed #555;
+}
+
+article img,
+article iframe {
+  max-width: 90%;
+  height: auto;
+}
+
+article a {
+  font-weight: bold;
+}
+
+article p {
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+/* ASIDE */
+aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 24%;
+  margin-right: 3%;
+  padding: 0 4% 15px 2%;
+  background-color: rgba(255,188,125, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+aside h3 {
+  font-size: 1.2em;
+  margin: 2em 0 1em 0;
+}
+
+aside h3:hover {
+  cursor: pointer;
+}
+
+aside a {
+  font-weight: bold;
+  display: block;
+  line-height: 2em;
+}
+
+aside .tooltip {
+  position: absolute;
+  z-index: 1;
+  top: 2.6em;
+  right: 0;
+  background-color: rgba(0,0,0, 0.4);
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 7px 9px;
+  border-radius: 2px;
+}

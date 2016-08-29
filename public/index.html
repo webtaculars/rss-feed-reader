@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>RSS Feeds</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheet/style.css">
+
+  <script type="text/javascript" src="https://www.google.com/jsapi">
+  </script>
+  <script type="text/javascript">
+    google.load('feeds','1');
+  </script>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src='javascript/feed.js'></script>
+  <script src='javascript/script.js'></script>
+</head>
+
+<body>
+  <header>
+    <h1>RSS Reader</h1>
+    <form class='get-feed'>
+      <input type="text" placeholder="Enter your URL"></input>
+      <button>Fetch feed</button>
+    </form>
+
+    <div class="feed-info"></div>
+  </header>
+
+  <section class="content">
+    &nbsp;
+  </section>
+
+  <aside>
+    <h3></h3>
+    <div>Time<div style="position:absolute;" id="time"></div><div><br>
+    <div style="position:absolute;">Time Spent<div style="position:absolute;right:0px;" id="timer"></div>
+    <div style="position:absolute;right:20px;" id="minute"></div></div>
+    <div></div>
+    <br>
+    <br>
+  </aside>
+
+  <script type="text/javascript">
+      //DATE and TIME(R)
+      var minute = 0;
+      var value = 0;
+      var currentTime = 0;
+      window.setInterval(timer,1000);
+      function timer() {
+              date = new Date();
+
+        document.getElementById('time').innerHTML=date.toISOString();
+        if(value<59){
+        value = currentTime++;
+
+        document.getElementById('timer').innerHTML=value;
+        }
+        else{
+          value=0;
+          currentTime=0;
+          minute++;
+            document.getElementById('minute').innerHTML=minute;
+        };
+      }
+  </script>
+</body>
+</html>
